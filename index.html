@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadil Mansoob Mir | BCA Graduate & Web Developer</title>
+    <meta name="description" content="Portfolio of Aadil - BCA Graduate passionate about web development">
+    <meta name="keywords" content="web developer, portfolio, BCA graduate, JavaScript, React">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" as="style">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav data-aos="fade-down">
+        <div class="container">
+            <h1 class="logo">Aadil Mansoob Mir</h1>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Element -->
+    <section class="hero" data-aos="fade-up">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Aadil</span></h1>
+                <p>BCA Graduate | Full-Stack Developer</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+            <div id="threejs-container"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" data-aos="fade-right">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- GitHub projects loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-aos="fade-left">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <!-- Skills loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="zoom-in">
+        <div class="container">
+            <h2>Let's Collaborate</h2>
+            <div class="contact-wrapper">
+               <!-- Update form for Netlify email handling -->
+                <form id="contact-form" class="contact-form" name="contact" netlify>
+                  <input type="hidden" name="form-name" value="contact">
+                 <div class="form-group">
+                   <input type="text" name="name" placeholder="Your Name" required>
+                 </div>
+                 <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" required>
+                 </div>
+                 <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                 </div>
+                  <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <!-- Update email link to use mailto -->
+                    <a href="mailto:aadilmansoobmir@gmail.com" class="email-link">aadilmansoobmir.com</a>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 150
+        });
+    </script>
+</body>
+</html>
