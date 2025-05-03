@@ -20,7 +20,7 @@ const fetchGitHubProjects = async () => {
     
     try {
       console.log('Fetching GitHub projects...');
-      const response = await fetch('https://api.github.com/users/YOUR_GITHUB_USERNAME/repos');
+      const response = await fetch('https://api.github.com/users/Aadilmansoob/repos');
       
       if (!response.ok) {
         throw new Error(`GitHub API Error: ${response.status}`);
